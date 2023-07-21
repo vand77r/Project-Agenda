@@ -1,0 +1,10 @@
+<h1> Login !</h1>
+<div class="container">
+    <!--<p *ngIf="!invalidLogin">login works!</p>!-->
+    <small *ngIf="invalidLogin">Invalid credentials</small>
+
+    USERNAME : <input type="text" name="username" [(ngModel)]="username">
+    PASSWORD : <input type="password" name="password" [(ngModel)]="password">
+
+    <button (click)="handleLogin()" class="btn btn-success">Login</button>
+</div>
